@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AWWWDDE</title>
+    <title>awwwdde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             background-color: #1C1B1B;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             margin: 0;
             color: white;
@@ -36,6 +38,21 @@
         .language-switch span:hover {
             color: #FFCC00; /* Цвет при наведении */
         }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #FFCC00; /* Цвет при наведении */
+        }
     </style>
 </head>
 <body>
@@ -43,6 +60,11 @@
         <h1>Разработка в процессе</h1>
         <div class="language-switch">
             <span id="rus">Рус</span> | <span id="eng">Eng</span>
+        </div>
+        <div class="social-links">
+            <a href="https://dribbble.com/awwwdde" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+            <a href="https://github.com/awwwdde" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://t.me/adolfvav" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
         </div>
     </div>
 
