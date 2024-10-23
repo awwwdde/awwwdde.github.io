@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>awwwdde portfolio</title>
+    <style>
+        body {
+            background-color: #1C1B1B;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .language-switch {
+            margin-top: 20px;
+        }
+
+        .language-switch span {
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .language-switch span:hover {
+            color: #FFCC00; /* Цвет при наведении */
+        }
+    </style>
 </head>
 <body>
-    <h1 style="display: flex; justify-content: center; align-items: center; font-size: 36px;">DEVELOPING IN PROGRESS</h1>\
-    <h2 style="display: flex; justify-content: center; align-items: center; font-size: 36px;" > 2024</h2>
+    <div class="container">
+        <div class="language-switch">
+            <span id="rus">Рус</span> | <span id="eng">Eng</span>
+        </div>
+    </div>
+
+    <script>
+        const rus = document.getElementById('rus');
+        const eng = document.getElementById('eng');
+        const heading = document.querySelector('h1');
+
+        rus.addEventListener('click', () => {
+            heading.textContent = 'Разработка в процессе';
+        });
+
+        eng.addEventListener('click', () => {
+            heading.textContent = 'Development in progress';
+        });
+    </script>
 </body>
 </html>
